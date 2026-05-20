@@ -6,49 +6,48 @@
     <title>有些话，还是想认真和你说</title>
     <meta
       name="description"
-      content="我把想说的话整理成了一页小小的信，点开看看。"
+      content="终于到520了，其实有些话我真的很早就想对你说了。后面还有一些没写完的话，点开继续看。"
     >
-    <link rel="canonical" href="https://azusan0.github.io/Love_Joker/">
+    <link rel="canonical" href="https://azusa-cloud-d0g61tf192b28b9ed-1359019518.tcloudbaseapp.com/lovej/">
     <meta itemprop="name" content="有些话，还是想认真和你说">
     <meta
       itemprop="description"
-      content="我把想说的话整理成了一页小小的信，点开看看。"
+      content="终于到520了，其实有些话我真的很早就想对你说了。后面还有一些没写完的话，点开继续看。"
     >
-    <meta itemprop="image" content="https://azusan0.github.io/Love_Joker/share-cover.png">
-    <meta itemprop="url" content="https://azusan0.github.io/Love_Joker/">
+    <meta itemprop="image" content="https://azusa-cloud-d0g61tf192b28b9ed-1359019518.tcloudbaseapp.com/lovej/share-cover.png">
+    <meta itemprop="url" content="https://azusa-cloud-d0g61tf192b28b9ed-1359019518.tcloudbaseapp.com/lovej/">
     <meta property="og:title" content="有些话，还是想认真和你说">
     <meta
       property="og:description"
-      content="我把想说的话整理成了一页小小的信，点开看看。"
+      content="终于到520了，其实有些话我真的很早就想对你说了。后面还有一些没写完的话，点开继续看。"
     >
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Love Joker">
-    <meta property="og:url" content="https://azusan0.github.io/Love_Joker/">
-    <meta property="og:image" content="https://azusan0.github.io/Love_Joker/share-cover.png">
-    <meta property="og:image:secure_url" content="https://azusan0.github.io/Love_Joker/share-cover.png">
+    <meta property="og:url" content="https://azusa-cloud-d0g61tf192b28b9ed-1359019518.tcloudbaseapp.com/lovej/">
+    <meta property="og:image" content="https://azusa-cloud-d0g61tf192b28b9ed-1359019518.tcloudbaseapp.com/lovej/share-cover.png">
+    <meta property="og:image:secure_url" content="https://azusa-cloud-d0g61tf192b28b9ed-1359019518.tcloudbaseapp.com/lovej/share-cover.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="一张像手写信预览卡片的分享封面">
+    <meta property="og:image:alt" content="一张像长文预览的分享封面">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="有些话，还是想认真和你说">
     <meta
       name="twitter:description"
-      content="我把想说的话整理成了一页小小的信，点开看看。"
+      content="终于到520了，其实有些话我真的很早就想对你说了。后面还有一些没写完的话，点开继续看。"
     >
-    <meta name="twitter:image" content="https://azusan0.github.io/Love_Joker/share-cover.png">
+    <meta name="twitter:image" content="https://azusa-cloud-d0g61tf192b28b9ed-1359019518.tcloudbaseapp.com/lovej/share-cover.png">
+    <meta http-equiv="refresh" content="1; url=./letter.html">
     <meta name="theme-color" content="#f7f2ef">
     <style>
       :root {
         color-scheme: light;
-        --paper: #fbf7f4;
-        --paper-edge: #f0e7e1;
-        --ink: #26211f;
-        --muted: #766962;
-        --accent: #e96a82;
-        --accent-strong: #cf4563;
-        --overlay: rgba(19, 14, 13, 0.86);
-        --panel-width: min(92vw, 760px);
-        --shadow: 0 20px 48px rgba(73, 44, 45, 0.18);
+        --bg-1: #fff4f6;
+        --bg-2: #fff8f1;
+        --paper: rgba(255, 252, 249, 0.96);
+        --ink: #2d2423;
+        --muted: #7b6a64;
+        --shadow: 0 28px 80px rgba(67, 85, 120, 0.12);
+        --border: rgba(209, 216, 228, 0.72);
       }
 
       * {
@@ -61,8 +60,9 @@
         min-height: 100%;
         font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
         background:
-          radial-gradient(circle at top, rgba(233, 106, 130, 0.2), transparent 32%),
-          linear-gradient(180deg, #fff5f8 0%, #fff9f3 44%, #fdf7f3 100%);
+          radial-gradient(circle at 20% 18%, rgba(154, 190, 255, 0.16), transparent 24%),
+          radial-gradient(circle at 84% 12%, rgba(255, 212, 228, 0.16), transparent 18%),
+          linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 100%);
         color: var(--ink);
       }
 
@@ -73,381 +73,103 @@
         padding: 20px;
       }
 
-      .shell {
-        width: 100%;
-        display: grid;
-        place-items: center;
-      }
-
-      .note {
-        width: var(--panel-width);
-        background: linear-gradient(180deg, var(--paper) 0%, #fffdfc 100%);
-        border: 1px solid var(--paper-edge);
+      .card {
+        width: min(92vw, 760px);
         border-radius: 8px;
-        overflow: hidden;
+        background: linear-gradient(180deg, var(--paper) 0%, #fffdfc 100%);
+        border: 1px solid var(--border);
         box-shadow: var(--shadow);
+        overflow: hidden;
       }
 
-      .note__bar {
+      .bar {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
         padding: 14px 18px;
         background: #f4ece7;
         border-bottom: 1px solid #eadfd8;
       }
 
-      .note__dots {
-        display: flex;
-        gap: 6px;
-      }
-
-      .dot {
-        width: 10px;
-        height: 10px;
+      .avatar {
+        width: 42px;
+        height: 42px;
         border-radius: 999px;
-        background: #d8c6be;
+        background: linear-gradient(135deg, #262a35 0%, #5a6476 100%);
       }
 
-      .dot:nth-child(1) {
-        background: #f391a0;
+      .title-box {
+        display: grid;
+        gap: 3px;
       }
 
-      .dot:nth-child(2) {
-        background: #f2bc67;
-      }
-
-      .dot:nth-child(3) {
-        background: #93c881;
-      }
-
-      .note__title {
+      .title {
         margin: 0;
-        font-size: 14px;
-        color: var(--muted);
+        font-size: 16px;
+        color: #181b20;
+        font-weight: 700;
       }
 
-      .note__body {
-        padding: 24px 22px 20px;
-      }
-
-      .eyebrow {
-        margin: 0 0 12px;
+      .sub {
+        margin: 0;
         font-size: 12px;
-        letter-spacing: 0;
         color: var(--muted);
-        text-transform: uppercase;
       }
 
-      .letter {
-        margin: 0;
-        white-space: pre-line;
-        line-height: 1.85;
+      .body {
+        padding: 24px 24px 22px;
+      }
+
+      .line {
+        margin: 0 0 6px;
         font-size: 17px;
-      }
-
-      .hint {
-        margin: 22px 0 0;
-        font-size: 13px;
-        color: var(--muted);
-      }
-
-      .actions {
-        display: flex;
-        gap: 12px;
-        padding: 0 22px 24px;
-      }
-
-      .button {
-        appearance: none;
-        border: 0;
-        border-radius: 999px;
-        padding: 14px 20px;
-        font-size: 15px;
-        font-weight: 600;
-        cursor: pointer;
-        transition:
-          transform 180ms ease,
-          background-color 180ms ease,
-          box-shadow 180ms ease,
-          opacity 180ms ease;
-      }
-
-      .button:active {
-        transform: translateY(1px) scale(0.995);
-      }
-
-      .button--primary {
-        background: var(--accent);
-        color: #fff;
-        box-shadow: 0 12px 24px rgba(233, 106, 130, 0.3);
-      }
-
-      .button--primary:hover {
-        background: var(--accent-strong);
-      }
-
-      .button--ghost {
-        background: rgba(255, 255, 255, 0.7);
-        color: var(--muted);
-      }
-
-      .button--ghost:hover {
-        opacity: 0.85;
-      }
-
-      .prank {
-        position: fixed;
-        inset: 0;
-        display: grid;
-        place-items: center;
-        padding: 20px;
-        background: var(--overlay);
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 220ms ease;
-      }
-
-      .prank.is-visible {
-        opacity: 1;
-        pointer-events: auto;
-      }
-
-      .prank__frame {
-        width: min(94vw, 860px);
-        display: grid;
-        gap: 16px;
-        justify-items: center;
-      }
-
-      .prank__media {
-        width: 100%;
-        border-radius: 8px;
-        overflow: hidden;
-        background:
-          linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
-          #1f1717;
-        box-shadow: 0 24px 56px rgba(0, 0, 0, 0.36);
-        position: relative;
-        display: grid;
-        place-items: center;
-        min-height: 320px;
-      }
-
-      .prank__image {
-        width: 100%;
-        height: auto;
-        max-height: 82vh;
-        object-fit: contain;
-        display: block;
-        background: #1f1717;
-      }
-
-      .prank__placeholder {
-        position: absolute;
-        inset: 0;
-        display: grid;
-        place-items: center;
-        padding: 24px;
-        text-align: center;
-        color: #f7efef;
-        background:
-          radial-gradient(circle at top, rgba(233, 106, 130, 0.26), transparent 38%),
-          linear-gradient(180deg, #322224 0%, #1f1717 100%);
-      }
-
-      .prank__placeholder strong {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 28px;
-      }
-
-      .prank__placeholder span {
-        display: block;
-        font-size: 15px;
         line-height: 1.7;
-        color: rgba(247, 239, 239, 0.82);
+        color: #25282e;
       }
 
-      .prank__caption {
-        margin: 0;
+      .line--tail {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .fade {
+        height: 24px;
+        margin-top: -14px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 253, 252, 1));
+      }
+
+      .jump {
+        margin-top: 6px;
         font-size: 14px;
-        color: rgba(255, 255, 255, 0.76);
-        text-align: center;
-      }
-
-      .shake {
-        animation: shake 480ms ease;
-      }
-
-      @keyframes shake {
-        0%,
-        100% {
-          transform: translate3d(0, 0, 0);
-        }
-
-        16% {
-          transform: translate3d(-10px, 2px, 0);
-        }
-
-        32% {
-          transform: translate3d(8px, -3px, 0);
-        }
-
-        48% {
-          transform: translate3d(-7px, 4px, 0);
-        }
-
-        64% {
-          transform: translate3d(6px, -2px, 0);
-        }
-
-        80% {
-          transform: translate3d(-4px, 2px, 0);
-        }
-      }
-
-      .hidden {
-        display: none;
-      }
-
-      @media (max-width: 680px) {
-        body {
-          padding: 12px;
-        }
-
-        .note__body {
-          padding: 20px 18px 16px;
-        }
-
-        .actions {
-          padding: 0 18px 20px;
-          flex-direction: column;
-        }
-
-        .button {
-          width: 100%;
-        }
-
-        .letter {
-          font-size: 16px;
-          line-height: 1.78;
-        }
-
-        .prank__placeholder strong {
-          font-size: 24px;
-        }
+        color: #98a7bc;
       }
     </style>
-  </head>
-  <body>
-    <main class="shell">
-      <section class="note" aria-label="表白信页面">
-        <div class="note__bar">
-          <div class="note__dots" aria-hidden="true">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-          <p class="note__title">520_confession_letter.txt</p>
-        </div>
-
-        <div class="note__body">
-          <p class="eyebrow">TEXT PREVIEW</p>
-          <p class="letter">终于到520了。
-
-其实有些话，我真的很早就想对你说了。
-
-这些天每次想到你，我都觉得应该认真一点，把那些别扭、犹豫、心动和小小的期待，慢慢写给你看。
-
-所以我把它们整理成了一封小小的信。
-
-你要是愿意的话，就继续往下看吧。</p>
-          <p class="hint">点开之后，请保持一点点心理准备。</p>
-        </div>
-
-        <div class="actions">
-          <button class="button button--primary" id="revealButton" type="button">
-            继续看
-          </button>
-          <button class="button button--ghost" id="closeButton" type="button">
-            我再缓缓
-          </button>
-        </div>
-      </section>
-    </main>
-
-    <aside class="prank" id="prankLayer" aria-hidden="true">
-      <div class="prank__frame" id="prankFrame">
-        <div class="prank__media">
-          <img
-            class="prank__image"
-            id="prankImage"
-            src="./prank-image.jpg"
-            alt="整蛊图片"
-          >
-          <div class="prank__placeholder hidden" id="prankPlaceholder">
-            <div>
-              <strong>惊不惊喜</strong>
-              <span>把你的整蛊图命名成 <code>prank-image.jpg</code> 放在同目录，刷新后这里就会显示真实图片。</span>
-            </div>
-          </div>
-        </div>
-        <p class="prank__caption">好了，表白信先放一边。你上当了。</p>
-        <button class="button button--primary" id="replayButton" type="button">
-          返回上一页
-        </button>
-      </div>
-    </aside>
-
     <script>
-      const revealButton = document.getElementById("revealButton");
-      const closeButton = document.getElementById("closeButton");
-      const prankLayer = document.getElementById("prankLayer");
-      const prankFrame = document.getElementById("prankFrame");
-      const prankImage = document.getElementById("prankImage");
-      const prankPlaceholder = document.getElementById("prankPlaceholder");
-      const replayButton = document.getElementById("replayButton");
-
-      function showPrank() {
-        prankLayer.classList.add("is-visible");
-        prankLayer.setAttribute("aria-hidden", "false");
-        prankFrame.classList.remove("shake");
-        void prankFrame.offsetWidth;
-        prankFrame.classList.add("shake");
-      }
-
-      function hidePrank() {
-        prankLayer.classList.remove("is-visible");
-        prankLayer.setAttribute("aria-hidden", "true");
-      }
-
-      prankImage.addEventListener("load", () => {
-        prankPlaceholder.classList.add("hidden");
-      });
-
-      prankImage.addEventListener("error", () => {
-        prankPlaceholder.classList.remove("hidden");
-      });
-
-      revealButton.addEventListener("click", showPrank);
-      replayButton.addEventListener("click", hidePrank);
-      closeButton.addEventListener("click", () => {
-        const hint = document.querySelector(".hint");
-        hint.textContent = "别紧张，我保证不会太过分。";
-      });
-
-      prankLayer.addEventListener("click", (event) => {
-        if (event.target === prankLayer) {
-          hidePrank();
-        }
-      });
-
-      document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-          hidePrank();
-        }
+      window.addEventListener("load", () => {
+        window.setTimeout(() => {
+          window.location.replace("./letter.html");
+        }, 800);
       });
     </script>
+  </head>
+  <body>
+    <main class="card" aria-label="分享入口页">
+      <div class="bar">
+        <div class="avatar" aria-hidden="true"></div>
+        <div class="title-box">
+          <p class="title">麻衣酱</p>
+          <p class="sub">今天 19:18</p>
+        </div>
+      </div>
+      <div class="body">
+        <p class="line">终于到520了其实有些话我真的很早就想对你说了</p>
+        <p class="line">这些天每次想到你我都觉得应该认真一点把那些</p>
+        <p class="line">别扭犹豫心动和小小的期待慢慢写给你看所以我</p>
+        <p class="line line--tail">把它们整理成了一封小小的信想趁今天发给你如果你愿意的话就继续往下看吧…</p>
+        <div class="fade" aria-hidden="true"></div>
+        <p class="jump">查看全文</p>
+      </div>
+    </main>
   </body>
 </html>

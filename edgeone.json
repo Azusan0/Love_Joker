@@ -20,6 +20,15 @@
       ]
     },
     {
+      "source": "/letter.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        }
+      ]
+    },
+    {
       "source": "/share-cover.png",
       "headers": [
         {

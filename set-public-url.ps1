@@ -89,5 +89,7 @@ Update-SharePage -Path (Join-Path $root 'index.html') -CanonicalUrl ('{0}/' -f $
 
 Update-SharePage -Path (Join-Path $root 'share.html') -CanonicalUrl ('{0}/share.html' -f $normalized) -PageUrl ('{0}/share.html' -f $normalized) -ImageUrl $imageUrl
 
+Update-SharePage -Path (Join-Path $root 'letter.html') -CanonicalUrl ('{0}/letter.html' -f $normalized) -PageUrl ('{0}/letter.html' -f $normalized) -ImageUrl $imageUrl
+
 Write-Host "Updated public URL: $normalized"
 Write-Host "If you changed the share-cover text, regenerate share-cover.png."
