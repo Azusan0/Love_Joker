@@ -7,15 +7,13 @@
     <style>
       :root {
         color-scheme: light;
-        --bg-1: #fff4f6;
-        --bg-2: #fff8f1;
-        --paper: rgba(255, 252, 249, 0.96);
-        --paper-edge: rgba(233, 220, 213, 0.96);
-        --ink: #2d2423;
-        --muted: #7b6a64;
-        --accent: #e96a82;
-        --accent-soft: rgba(233, 106, 130, 0.14);
-        --shadow: 0 28px 80px rgba(74, 40, 46, 0.16);
+        --bg: #f6f7fb;
+        --card: #ffffff;
+        --text: #16181c;
+        --muted: #8d96a3;
+        --link: #97a6bd;
+        --shadow: 0 28px 70px rgba(67, 85, 120, 0.12);
+        --border: rgba(209, 216, 228, 0.72);
       }
 
       * {
@@ -30,206 +28,166 @@
         overflow: hidden;
         font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
         background:
-          radial-gradient(circle at 20% 18%, rgba(233, 106, 130, 0.16), transparent 24%),
-          radial-gradient(circle at 84% 12%, rgba(250, 202, 120, 0.16), transparent 18%),
-          linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 100%);
-        color: var(--ink);
+          radial-gradient(circle at 12% 10%, rgba(154, 190, 255, 0.22), transparent 24%),
+          radial-gradient(circle at 92% 12%, rgba(255, 212, 228, 0.22), transparent 18%),
+          linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
+        color: var(--text);
       }
 
       body {
-        padding: 48px;
+        padding: 38px;
       }
 
-      .frame {
+      .phone {
         width: 100%;
         height: 100%;
-        display: grid;
-        grid-template-columns: 1.2fr 0.85fr;
-        gap: 28px;
-        align-items: stretch;
-      }
-
-      .card {
-        border-radius: 8px;
-        background: linear-gradient(180deg, var(--paper) 0%, #fffdfc 100%);
-        border: 1px solid var(--paper-edge);
+        padding: 28px 30px 24px;
+        border-radius: 16px;
+        background: var(--card);
+        border: 1px solid var(--border);
         box-shadow: var(--shadow);
+        display: grid;
+        grid-template-rows: auto 1fr auto auto;
+        align-content: start;
+        gap: 18px;
         overflow: hidden;
       }
 
-      .note {
-        display: grid;
-        grid-template-rows: auto 1fr;
-      }
-
-      .bar {
+      .top {
         display: flex;
         align-items: center;
-        gap: 12px;
-        padding: 18px 24px;
-        background: #f6ede8;
-        border-bottom: 1px solid #eaded8;
-      }
-
-      .dots {
-        display: flex;
-        gap: 8px;
-      }
-
-      .dot {
-        width: 11px;
-        height: 11px;
-        border-radius: 999px;
-        background: #dbc8c0;
-      }
-
-      .dot:nth-child(1) {
-        background: #f391a0;
-      }
-
-      .dot:nth-child(2) {
-        background: #f1be6a;
-      }
-
-      .dot:nth-child(3) {
-        background: #95c77f;
-      }
-
-      .filename {
-        margin: 0;
-        font-size: 19px;
-        color: var(--muted);
-      }
-
-      .content {
-        padding: 34px 32px 30px;
-        display: grid;
-        align-content: start;
-        gap: 18px;
-      }
-
-      .eyebrow {
-        margin: 0;
-        font-size: 15px;
-        color: var(--muted);
-      }
-
-      h1 {
-        margin: 0;
-        font-size: 46px;
-        line-height: 1.18;
-        letter-spacing: 0;
-      }
-
-      .copy {
-        margin: 0;
-        white-space: pre-line;
-        font-size: 27px;
-        line-height: 1.65;
-      }
-
-      .hint {
-        margin: 0;
-        font-size: 18px;
-        color: var(--muted);
-      }
-
-      .meta {
-        padding: 26px 24px;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-        gap: 18px;
-        background:
-          linear-gradient(180deg, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.92) 100%);
-      }
-
-      .pill {
-        justify-self: start;
-        padding: 10px 16px;
-        border-radius: 999px;
-        background: var(--accent-soft);
-        color: var(--accent);
-        font-size: 16px;
-        font-weight: 700;
-      }
-
-      .summary {
-        display: grid;
-        align-content: start;
         gap: 16px;
       }
 
-      .summary h2 {
+      .avatar {
+        width: 70px;
+        height: 70px;
+        border-radius: 999px;
+        background:
+          radial-gradient(circle at 38% 34%, rgba(255, 255, 255, 0.16), transparent 22%),
+          linear-gradient(135deg, #262a35 0%, #5a6476 100%);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .avatar::after {
+        content: "";
+        position: absolute;
+        inset: 12px;
+        border-radius: 999px;
+        border: 2px solid rgba(255, 255, 255, 0.16);
+      }
+
+      .identity {
+        display: grid;
+        gap: 6px;
+      }
+
+      .name {
         margin: 0;
-        font-size: 30px;
-        line-height: 1.3;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 0;
       }
 
-      .summary p {
+      .time {
         margin: 0;
-        font-size: 21px;
-        line-height: 1.7;
-        color: #5b4f4a;
-      }
-
-      .url {
-        align-self: end;
-        padding: 18px 20px;
-        border-radius: 8px;
-        background: #fff8f8;
-        border: 1px solid #f0d7de;
-      }
-
-      .url-label {
-        margin: 0 0 8px;
-        font-size: 14px;
+        font-size: 20px;
         color: var(--muted);
-        text-transform: uppercase;
       }
 
-      .url-value {
+      .copy {
+        position: relative;
+        display: grid;
+        gap: 8px;
+        padding-right: 14px;
+        align-content: start;
+      }
+
+      .line {
         margin: 0;
-        font-size: 21px;
-        line-height: 1.4;
-        color: #3a3030;
-        font-weight: 600;
+        font-size: 38px;
+        line-height: 1.32;
+        letter-spacing: 0;
+      }
+
+      .line--short {
+        width: 92%;
+      }
+
+      .line--fade {
+        width: 84%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .more {
+        position: relative;
+        margin-top: -6px;
+        font-size: 28px;
+        line-height: 1.2;
+        color: var(--link);
+        font-weight: 500;
+      }
+
+      .fade {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 12px;
+        height: 54px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0), var(--card));
+        pointer-events: none;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--muted);
+        font-size: 20px;
+      }
+
+      .footer span {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 999px;
+        background: #ccd3df;
       }
     </style>
   </head>
   <body>
-    <main class="frame">
-      <section class="card note">
-        <div class="bar">
-          <div class="dots" aria-hidden="true">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-          <p class="filename">520_confession_letter.txt</p>
+    <main class="phone">
+      <header class="top">
+        <div class="avatar" aria-hidden="true"></div>
+        <div class="identity">
+          <p class="name">麻衣酱</p>
+          <p class="time">今天 19:18</p>
         </div>
-        <div class="content">
-          <p class="eyebrow">TEXT PREVIEW</p>
-          <h1>有些话，还是想认真和你说</h1>
-          <p class="copy">终于到520了。
+      </header>
 
-其实有些话，我真的很早就想对你说了。
-
-我把它们整理成了一页小小的信。</p>
-          <p class="hint">点开继续看，后面还有没写完的内容。</p>
-        </div>
+      <section class="copy" aria-label="长文预览">
+        <p class="line">终于到520了其实有些话我真的很早就想对你说了</p>
+        <p class="line">这些天每次想到你我都觉得应该认真一点把那些</p>
+        <p class="line">别扭犹豫心动和小小的期待慢慢写给你看所以我</p>
+        <p class="line line--short">把它们整理成了一封小小的信想趁今天发给你</p>
+        <p class="line line--fade">如果你愿意的话就继续往下看吧后面还有一些没写完的话…</p>
+        <div class="fade" aria-hidden="true"></div>
       </section>
 
-      <aside class="card meta">
-        <div class="pill">520 特别版</div>
-        <div class="summary">
-          <h2>像一张认真写好的小卡片</h2>
-          <p>让 QQ 空间优先抓到标题、摘要和封面，而不是只露出一串生硬链接。</p>
-        </div>
-        <div class="url">
-          <p class="url-label">Link</p>
-          <p class="url-value">点开继续看</p>
-        </div>
-      </aside>
+      <p class="more">查看全文</p>
+
+      <footer class="footer">
+        <span><i class="dot"></i> Xiaomi 14 Ultra (5G)</span>
+        <span>点赞&nbsp;&nbsp;评论&nbsp;&nbsp;分享</span>
+      </footer>
     </main>
   </body>
 </html>

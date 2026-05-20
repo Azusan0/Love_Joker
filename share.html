@@ -6,13 +6,13 @@
     <title>有些话，还是想认真和你说</title>
     <meta
       name="description"
-      content="我把想说的话整理成了一页小小的信，点开看看。"
+      content="终于到520了，其实有些话我真的很早就想对你说了。后面还有一些没写完的话，点开继续看。"
     >
     <link rel="canonical" href="https://azusan0.github.io/Love_Joker/share.html">
     <meta itemprop="name" content="有些话，还是想认真和你说">
     <meta
       itemprop="description"
-      content="我把想说的话整理成了一页小小的信，点开看看。"
+      content="终于到520了，其实有些话我真的很早就想对你说了。后面还有一些没写完的话，点开继续看。"
     >
     <meta itemprop="image" content="https://azusan0.github.io/Love_Joker/share-cover.png">
     <meta
@@ -22,7 +22,7 @@
     <meta property="og:title" content="有些话，还是想认真和你说">
     <meta
       property="og:description"
-      content="我把想说的话整理成了一页小小的信，点开看看。"
+      content="终于到520了，其实有些话我真的很早就想对你说了。后面还有一些没写完的话，点开继续看。"
     >
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Love Joker">
@@ -39,7 +39,7 @@
     <meta name="twitter:title" content="有些话，还是想认真和你说">
     <meta
       name="twitter:description"
-      content="我把想说的话整理成了一页小小的信，点开看看。"
+      content="终于到520了，其实有些话我真的很早就想对你说了。后面还有一些没写完的话，点开继续看。"
     >
     <meta name="twitter:image" content="https://azusan0.github.io/Love_Joker/share-cover.png">
     <meta http-equiv="refresh" content="1; url=./index.html">
@@ -53,8 +53,8 @@
         --paper-edge: rgba(233, 220, 213, 0.96);
         --ink: #2d2423;
         --muted: #7b6a64;
-        --accent: #e96a82;
-        --shadow: 0 28px 80px rgba(74, 40, 46, 0.16);
+        --shadow: 0 28px 80px rgba(67, 85, 120, 0.12);
+        --border: rgba(209, 216, 228, 0.72);
       }
 
       * {
@@ -67,8 +67,8 @@
         min-height: 100%;
         font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
         background:
-          radial-gradient(circle at 20% 18%, rgba(233, 106, 130, 0.16), transparent 24%),
-          radial-gradient(circle at 84% 12%, rgba(250, 202, 120, 0.16), transparent 18%),
+          radial-gradient(circle at 20% 18%, rgba(154, 190, 255, 0.16), transparent 24%),
+          radial-gradient(circle at 84% 12%, rgba(255, 212, 228, 0.16), transparent 18%),
           linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 100%);
         color: var(--ink);
       }
@@ -84,7 +84,7 @@
         width: min(92vw, 760px);
         border-radius: 8px;
         background: linear-gradient(180deg, var(--paper) 0%, #fffdfc 100%);
-        border: 1px solid var(--paper-edge);
+        border: 1px solid var(--border);
         box-shadow: var(--shadow);
         overflow: hidden;
       }
@@ -92,7 +92,7 @@
       .bar {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
         padding: 14px 18px;
         background: #f4ece7;
         border-bottom: 1px solid #eadfd8;
@@ -122,33 +122,58 @@
         background: #93c881;
       }
 
+      .avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #262a35 0%, #5a6476 100%);
+      }
+
+      .title-box {
+        display: grid;
+        gap: 3px;
+      }
+
       .title {
         margin: 0;
-        font-size: 14px;
+        font-size: 16px;
+        color: #181b20;
+        font-weight: 700;
+      }
+
+      .sub {
+        margin: 0;
+        font-size: 12px;
         color: var(--muted);
       }
 
       .body {
-        padding: 28px 24px 24px;
+        padding: 24px 24px 22px;
       }
 
-      h1 {
-        margin: 0 0 14px;
-        font-size: clamp(28px, 4vw, 38px);
-        line-height: 1.25;
-      }
-
-      p {
-        margin: 0;
+      .line {
+        margin: 0 0 6px;
         font-size: 17px;
-        line-height: 1.8;
-        color: #4f4340;
+        line-height: 1.7;
+        color: #25282e;
+      }
+
+      .line--tail {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       .jump {
-        margin-top: 18px;
+        margin-top: 6px;
         font-size: 14px;
-        color: var(--muted);
+        color: #98a7bc;
+      }
+
+      .fade {
+        height: 24px;
+        margin-top: -14px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 253, 252, 1));
       }
     </style>
     <script>
@@ -162,17 +187,19 @@
   <body>
     <main class="card" aria-label="分享入口页">
       <div class="bar">
-        <div class="dots" aria-hidden="true">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+        <div class="avatar" aria-hidden="true"></div>
+        <div class="title-box">
+          <p class="title">麻衣酱</p>
+          <p class="sub">今天 19:18</p>
         </div>
-        <p class="title">520_confession_letter.txt</p>
       </div>
       <div class="body">
-        <h1>有些话，还是想认真和你说</h1>
-        <p>我把想说的话整理成了一页小小的信，点开看看。</p>
-        <p class="jump">正在打开正文…</p>
+        <p class="line">终于到520了其实有些话我真的很早就想对你说了</p>
+        <p class="line">这些天每次想到你我都觉得应该认真一点把那些</p>
+        <p class="line">别扭犹豫心动和小小的期待慢慢写给你看所以我</p>
+        <p class="line line--tail">把它们整理成了一封小小的信想趁今天发给你如果你愿意的话就继续往下看吧…</p>
+        <div class="fade" aria-hidden="true"></div>
+        <p class="jump">查看全文</p>
       </div>
     </main>
   </body>
