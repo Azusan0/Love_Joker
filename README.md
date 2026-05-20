@@ -8,7 +8,8 @@
 
 - `index.html`：整蛊页本体
 - `prank-image.jpg`：已经接入的整蛊图
-- `share-cover.png`：分享封面图，已经生成
+- `share-cover.png`：给 QQ 空间抓取的分享卡片封面
+- `share-cover.html`：封面图的可编辑源页面
 
 ## 直接预览
 
@@ -24,6 +25,7 @@
 2. `<meta name="description">`：分享摘要
 3. `.letter` 里的正文：首屏假装表白信的内容
 4. `.prank__caption`：整蛊图出现后的底部文案
+5. `share-cover.html`：如果你想改分享卡片上的标题、摘要或链接文字
 
 ## QQ 空间发出去更像样的小建议
 
