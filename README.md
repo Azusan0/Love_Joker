@@ -11,6 +11,8 @@
 - `prank-image.jpg`：已经接入的整蛊图
 - `share-cover.png`：给 QQ 空间抓取的分享卡片封面
 - `share-cover.html`：封面图的可编辑源页面
+- `edgeone.json`：给 EdgeOne Pages 用的静态配置
+- `set-public-url.ps1`：切换公开访问地址时用的一键替换脚本
 
 ## 直接预览
 
@@ -29,6 +31,31 @@
 4. `.prank__caption`：整蛊图出现后的底部文案
 5. `share-cover.html`：如果你想改分享卡片上的标题、摘要或链接文字
 6. `share.html`：如果你想改分享入口页的标题、摘要或跳转速度
+7. `set-public-url.ps1`：如果你换成新的公开域名或项目地址，用它批量更新页面里的绝对链接
+
+## 切换公开地址
+
+如果你后面把页面迁到新的托管地址，比如 EdgeOne Pages 项目域名，可以在这个目录里运行：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\set-public-url.ps1 -PublicUrl "https://your-public-site.example"
+```
+
+例如：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\set-public-url.ps1 -PublicUrl "https://demo.pages.dev"
+```
+
+它会更新：
+
+- `index.html` 里的 canonical / og / itemprop / twitter 链接
+- `share.html` 里的 canonical / og / itemprop / twitter 链接
+
+## EdgeOne Pages 备注
+
+- 这是一个纯静态站，导入 Git 仓库时可以直接用仓库根目录作为输出目录。
+- `edgeone.json` 里已经给 `index.html` 和 `share.html` 配了不缓存策略，方便你改卡片信息后更快生效。
 
 ## QQ 空间发出去更像样的小建议
 
